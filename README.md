@@ -11,7 +11,11 @@ Each image is a 28x28 pixel grayscale representation of a digit, and the dataset
 
 ## Project Structure
 ```
-├── data/                         # Contains the MNIST dataset files 4 files (train-images-idx3-ubyte.gz: training set images (9912422 bytes), train-labels-idx1-ubyte.gz: training set labels (28881 bytes), t10k-images-idx3-ubyte.gz: test set images (1648877 bytes), t10k-labels-idx1-ubyte.gz: test set labels (4542 bytes))
+├── data/                         # Contains the MNIST dataset files
+│   ├── train-images-idx3-ubyte.gz   # Training set images (9912422 bytes)
+│   ├── train-labels-idx1-ubyte.gz   # Training set labels (28881 bytes)
+│   ├── t10k-images-idx3-ubyte.gz    # Test set images (1648877 bytes)
+│   ├── t10k-labels-idx1-ubyte.gz    # Test set labels (4542 bytes)
 ├── notebooks/                    # Jupyter Notebooks for exploration and model development
 ├── results/                      # Model outputs, evaluation metrics, and visualizations
 ├── src/                          # Python scripts for loading data, training models, and evaluation
@@ -66,8 +70,7 @@ Implemented and trained the following models:
 ## How to Run
 1. Ensure dependencies are installed using `pip install -r requirements.txt`.
 2. Run the Jupyter notebooks in `notebooks/` for step-by-step execution.
-3. Execute `src/train_model.py` to train and evaluate models.
-4. Check `results/` for output files and evaluation metrics.
+3. Check `results/` for output files and evaluation metrics.
 
 ## Future Improvements
 - Fine-tune hyperparameters for better performance.
@@ -75,5 +78,6 @@ Implemented and trained the following models:
 - Apply data augmentation techniques to enhance model generalization.
 
 ## Acknowledgments
-- MNIST dataset provided by Yann LeCun.
+- MNIST dataset from kaggle
 - Libraries used: NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn.
+
